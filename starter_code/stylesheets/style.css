@@ -62,8 +62,9 @@ font-size: 1.2em;
     align-items: center;
     justify-items: flex-end;
     align-content: flex-end;
-    width: 50%;
+    width: 45%;
     margin-right: 3%;
+    margin-left: 7%
 }
 .sign-in-section button{
     display: flex;
@@ -80,10 +81,17 @@ font-size: 1.2em;
     display: flex;
 visibility:visible;
 list-style: none;
-justify-content:space-between;
-width:35%;
+justify-content:flex-start;
+width:55%;
 margin-left: 0%;
 padding-left: 0%;
+}
+.sign-in-section ul li{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
 }
 .sign-in-section ul a{
     text-decoration: none;
@@ -92,9 +100,9 @@ padding-left: 0%;
     text-decoration: none;
     color: white;
     font-size: 1.2em;
-    margin-right: 5%;
+    margin-right: 10%;
     padding: 5%;
-    white-space: nowrap;   
+ 
 }
 .white-button{
     color: #540B51;
@@ -103,9 +111,9 @@ padding-left: 0%;
     background-color: white;
     border-radius: 0.4em;
     padding:5% 10%;
-    white-space:nowrap;
     font-weight: 600;
     text-transform: uppercase;
+    white-space: nowrap;
 
 }
 header{
@@ -459,17 +467,286 @@ footer img{
 }
 
 @media screen and (max-width:1440px) {
-    body {
-      background-color: rgb(230, 25, 25);
+ .left-button-area{
+    flex-direction: column;
+  
+}  
+.left-button-area button{
+    width:80%;
+    margin: 3%;
+}
+.google-button{
+    display: flex;
+    justify-content: flex-start;
+    padding:2%
+}
+.google-button img{
+    margin-right: 20%;
+}
+.e-mail-button{
+    padding:3.5%
+}
+.big-header-img{ position:relative;
+    right:-10%;
+    top: -10%
+
+}
+  @media screen and (max-width:1024px) {
+    .menu-button{visibility: visible;
+        display: flex;
+    }
+    .sign-in-section ul{
+        visibility: hidden;
+        display: none;
+    }
+    
+    .navigation-links ul{
+        visibility: hidden;
+    }
+    .marketing{
+        display: flex;
+        flex-direction: column;
+    }
+    .marketing-left {
+        width: 100%;
+    }
+    .marketing-right{
+        width: 100%;
+    }
+    .marketing-text-area{ 
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 8%;
+        margin-top: 4%;
+        padding: 0%;        
+    }
+    .inverse-row{ display: flex;
+        flex-direction: column-reverse;
+    }
+    .teams-rely div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin-top: 1%;
+    }
+    .white-purple-button{
+   
+        padding:3% 6%;
+
+    }
+    .purple-button{
+        padding:3% 6%;
+
+    }
+    .teams-rely ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        list-style: none;
+        margin-bottom: 1%;
+        padding: 0;
+  }
+  .teams-rely ul li{
+    margin:0 13% 0 13%;
+    padding:0
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-content: space-between;
+    width:10%;
     }
 
-  @media screen and (max-width:1024px) {
-    body {
-      background-color: rgb(23, 24, 23);
-    }
+}
+    .try-free{ position:relative;
+        width: 800%;
+        margin-bottom:1%;
+        top:-10px;
+        }
+         .white-border{
+        position: static;
+        top:50%;
+            width: 800%;
+         }
+    .greettings h3{
+        position: static;
+    }     
+}
+
+  .header-left{
+    width:75%
   }
-  @media screen and (max-width: 768px) {
-    body {
-      background-color: lightgreen;
-    }
+  .header-right{
+    width: 25%;
   }
+  .big-header-img{ position:relative;
+    right:-60%
+    
+  }
+  footer{
+    width:98%;
+
+footer img{
+    width:6%;
+
+}
+  }
+@media screen and (max-width: 768px) {
+    .navigation-links img{
+        height: 30%;
+        margin-left: 15%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .header-left{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+
+    } 
+    .header-right{
+        width: 100%;
+    }
+       .left-button-area{
+        width: 90%;
+        margin: 0 0 5% 0;
+    }
+    .left-button-area button{
+        width: 90%;
+        text-align: center;
+        margin: 0.5% 0;
+
+    }
+   .google-button span{
+    margin-left: 12%;
+   }
+   .other-company-logos{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .other-company-logos img{
+    height: 4em;
+    } 
+    .marketing-text-area{
+        display:flex;
+        margin: 3% 1.5%;
+        padding:0;
+        width: 98%;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .marketing{
+        margin: 9% 0;
+    }
+    .teams-rely{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .teams-rely h3{
+        font-size: 3.2em;
+       text-align: center;
+       width:72%
+    }
+    .teams-rely p{
+        font-size: 2em;
+        width: 95%;
+        text-align: center;
+    }
+.teams-rely ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+.teams-rely ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    width: 50%
+    }
+    .teams-rely div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        width: 95%;
+    }
+    .slack-enterprise{
+        width:100%;
+        margin:0 0 15px 0;
+    }
+    .talk-sales{
+        width:100%;
+        margin:0%
+    }
+    .row{
+        width:40%;
+        display: flex;
+        flex-direction: column-reverse;    
+    }
+    .try-free{
+        position:static;
+        width: 200%;
+
+        
+        
+    }
+    .white-border{
+        position: relative;
+        width: 200%;
+        top:-15px
+
+    
+    }
+    .last-list{
+        display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+.last-list li{
+    margin-top: 5%;
+}
+.copyright{
+    margin-bottom: 5%;
+}
+.last-icons{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+}
+
